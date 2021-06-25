@@ -1,0 +1,11 @@
+commit e2371b269bbc5484484087b1a20a38e8a0d0570b
+Author: Bryan Duncanson <bduncanson@madisoncollege.edu>
+Date:   Fri Jun 25 17:50:00 2021 -0500
+
+    Added a new file
+
+commit 279eb8cd98500cd22f47da8b519477c654cdff2a
+Author: Bryan Duncanson <bduncanson@madisoncollege.edu>
+Date:   Fri Jun 25 17:43:09 2021 -0500
+
+    Initial commit of GitHub exercise
