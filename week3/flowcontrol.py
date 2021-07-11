@@ -40,6 +40,14 @@ elif door == "2":
     if insanity == "1" or insanity == "2":
         print("1) Your body survives powered by a mind of jello.")
         print("1) Good job!")
+        print("Would you like to see an image of the dead Old God Y/N?")
+        Cthun = input("-> ")
+        if Cthun.lower() == "y":
+            from PIL import Image
+            cthunImg = Image.open("./Img/CthunDead.jpg")
+            cthunImg.show()
+        else:
+            print("Maybe next time")
     else:
         print("N) The insanity rots your eyes into a pool of muck.")
         print("N) Good job!")
@@ -64,10 +72,12 @@ elif door == "3":
         print("2) After spending time with Kolt he wears down and takes a nap.\n"
               "Now you can finish your assignment and get caught up\n")
         print("Congratulations, you win!")
-        from PIL import Image
-
-        img = Image.open("./KoltyBoy.jpg")
-        img.show()
+        print("Would you like to see a tired Kolty? Y/N")
+        KoltyImg = input("-> ")
+        if KoltyImg.lower() == "y":
+            from PIL import Image
+            koltImg = Image.open("./Img/KoltyBoy.jpg")
+            koltImg.show()
 
     else:
         print("Procrastinate and not picking an option you get nothing done.\n")
