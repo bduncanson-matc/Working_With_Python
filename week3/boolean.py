@@ -18,7 +18,6 @@ print("test" != "testing")
 print("test" == 1)
 print(1 == 1 and not ("testing" == 1 or 1 == 0))
 print("chunky" == "bacon" and not (3 == 4 or 3 == 3))
-
-
+print(3 == 3 and not ("testing" == "testing" or "Python" == "Fun"))
 
 
