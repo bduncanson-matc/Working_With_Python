@@ -7,23 +7,25 @@ for i in range(1,7):
     offsetIP = i + 9
     dict_FQDN_IP[f"server{i}.testlab.com"] = f"192.16.1.{offsetIP}"
 
-
+#equivlent to dict_FDQ[key]
 for key in dict_FQDN_IP:
     print(key)
 
 for key in dict_FQDN_IP:
     print(dict_FQDN_IP[key])
 
+#since range is from number1 to <number2 9 is used here to get server 7 and 8.
 for i in range(7,9):
     offsetIP = i + 9
     dict_FQDN_IP[f"server{i}.testlab.com"] = f"192.168.1.{offsetIP}"
-
+    
+#function created to check if a key exists in a dictionary.
 def testKey(dict, key):
     if key in dict.keys():
         print(f"{key} is in the dictionary and has the IP address {dict[key]}" )
     else:
         print(f"{key} is not in the dictionary")
-
+#using the function defined earlier to see if key values exist.
 testKey(dict_FQDN_IP,"server2.testlab.com")
 testKey(dict_FQDN_IP,"server10.testlab.com")
 
