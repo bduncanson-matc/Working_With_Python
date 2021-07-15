@@ -28,7 +28,7 @@ for num, line in enumerate(midTermLines):
            if i in line:
                Total += num
 
-print(f"The total is:{Total:> 6}")
+print(f"The total is:{Total:> 5}")
 
 
 
