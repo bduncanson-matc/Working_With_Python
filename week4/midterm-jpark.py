@@ -20,15 +20,15 @@ counter = 0
 # Driver code
 print(f"Name: {firstName:<>6}>{lastName:<>10}>")
 
-while counter < 3 and white_rabbit_object == 0: # counter less 3 and wro == 0
-    input_user = input(f"{listPWDBKeys[0]::<9}") # getting practice with fstrings
+while counter < 3 and white_rabbit_object == 0:  # counter less 3 and wro == 0
+    input_user = input(f"{listPWDBKeys[0]::<9}")  # getting practice with fstrings
     input_password = input(f"{listPWDBKeys[1]::<9}")
-    if input_user == password_database["Username"] and input_password == password_database["Password"]:# username/pw validation
-            white_rabbit_object = 1 # allowing user to proceed
+    if input_user == password_database["Username"] and input_password == password_database["Password"]:  # username/pw validation
+            white_rabbit_object = 1  # allowing user to proceed
             print("Hi, Dennis.  You're still the best hacker in Jurassic Park.")# This move was made in the early 90s and at that time they taught me 2 spaces after a period then :D
     else:
         counter += 1 # increment to limit limited attempts
-        print(f"{magicWord}. {counter}")# add failure string plus pw count
+        print(f"{magicWord}. {counter}")  # add failure string plus pw count
 if white_rabbit_object == 1:  # Succesful athetication loop
     for key in command_database:
         print(f"{key}")
@@ -40,7 +40,7 @@ if white_rabbit_object == 1:  # Succesful athetication loop
     elif user_command == listCDBKeys[2] or user_command.lower() == "c" or user_command.lower == "done":
         print(command_database[listCDBKeys[2]])
     else:
-        print("The Lysine Contingeny has been put in to effect.")
+        print("The Lysine Contingency has been put in to effect.")
 elif counter == 3:
     newLineMagicWord = f"{magicWord}!\n"
     print(f"{newLineMagicWord*25}")
