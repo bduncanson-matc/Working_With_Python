@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-#Variables
+# Variables
 firstName = "Bryan"
 lastName = "Duncanson"
 openMidtermTxt = open("Midterm-if.txt")
@@ -8,21 +8,22 @@ Total = 0
 
 #list
 keyWordsList = {
-"gmeach18@ed.gov",
-"248.253.63.149",
-"Whiteland",
-"80.222.19.190",
-"Kayley",
-"dcassyqw@microsoft.com"}
+    "gmeach18@ed.gov",
+    "248.253.63.149",
+    "Whiteland",
+    "80.222.19.190",
+    "Kayley",
+    "dcassyqw@microsoft.com",
+}
 
 
-#script code Learn how to format different characters on each side
-#if time permits comeback and do it the long way
-#
+# script code Learn how to format different characters on each side
+# if time permits comeback and do it the long way
 
 print (f"Name: {firstName:<>6}>{lastName:<>10}>")
 
-#enumerate works way better than iterating on len()
+# enumerate works way better than iterating on len()
+# not that effiecent (loops 6 items in a list 1000 times)but as simple as it gets
 for num, line in enumerate(midTermLines):
        for i in keyWordsList:
            if i in line:
