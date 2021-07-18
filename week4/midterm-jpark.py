@@ -13,7 +13,7 @@ command_database = {
 }
 listPWDBKeys = list(password_database)
 listCDBKeys = list(command_database)
-magicWord = "You Didnt say the magic word"
+magicWord = "You didnt say the magic word"
 white_rabbit_object = 0
 counter = 0
 
@@ -29,10 +29,11 @@ while counter < 3 and white_rabbit_object == 0:  # counter less 3 and wro == 0
     else:
         counter += 1 # increment to limit limited attempts
         print(f"{magicWord}. {counter}")  # add failure string plus pw count
-if white_rabbit_object == 1:  # Succesful athetication loop
+if white_rabbit_object == 1:  # Successful authentication loop
+    print("Please enter a command")
     for key in command_database:
         print(f"{key}")
-    user_command = input("Please enter a command: ")
+    user_command = input()
     if user_command == listCDBKeys[0] or user_command.lower() == "a" or user_command.lower == "reboot":
         print(command_database[listCDBKeys[0]])
     elif user_command == listCDBKeys[1] or user_command.lower() == "b" or user_command.lower == "shutdown":
