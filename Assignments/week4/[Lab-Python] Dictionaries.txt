@@ -1,0 +1,67 @@
+﻿[Lab-Python] Dictionaries
+________________
+
+
+  Get Started:
+1. Create a folder for the week we are in.  For example, if this is week 4 of your class schedule, create a folder called week4 (without spaces).
+2. Navigate to the weekly folder.
+3. Using nano (or another editor of your choice), create a script called dictionaries.py.  Make sure to set the permissions to allow python to execute.
+________________
+To Do:
+For each of the listed tasks add the Python code that will accomplish the task.  It’s wise to use comments in your script so you understand which code goes with each task.
+1. Make a dictionary containing the following FQDN to IP address mappings:
+
+
+server1.testlab.com -> 192.168.1.10
+server2.testlab.com -> 192.168.1.11
+server3.testlab.com -> 192.168.1.12
+server4.testlab.com -> 192.168.1.13
+server5.testlab.com -> 192.168.1.14
+server6.testlab.com -> 192.168.1.15
+
+
+
+
+2. List all of the FQDN’s in your dictionary
+
+
+3. List all of the IP Addresses in your dictionary
+
+
+4. List all of the full records (key/value pairs)
+
+
+5. Add a few more names to address mappings. Continue the ip address sequence above for their values.
+
+
+server7.testlab.com
+server8.testlab.com
+
+
+6. Test if server2.testlab.com is contained in your dictionary. 
+
+
+7. Test if server10.testlab.com is contained is your dictionary.
+
+
+	
+
+________________
+
+
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title including the week and assignment name.
+
+
+  
+
+3. Optional: Include any comments about things you want specific feedback on or questions you may have about the assignment.
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.

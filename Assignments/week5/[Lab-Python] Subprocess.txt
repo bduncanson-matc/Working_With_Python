@@ -1,0 +1,67 @@
+﻿[Lab-Python] Subprocess
+________________
+Get Started:
+1. Create a folder for the week we are in.  For example, if this is week 5 of your class schedule, create a folder called week5 (without spaces).
+2. Navigate to the weekly folder.
+3. Using nano (or another editor of your choice), create a script called subprocess.py. Make sure to set the permissions to allow python to execute.
+Part 1:
+
+
+The goal of this lab is to retrieve a list of processes from your system to work with. 
+
+
+
+
+1. Use the subprocess module command ‘run’ to call
+   * ‘ps -axco command’  **Note the word ‘command’ is part of the command.
+      * Test running this directly from the bash shell to see what data it returns. This will be what gets stored into your ‘stdout’ variable
+      * Note: The ‘command’ key word prints out the full command that was used to run the process.
+      * Remember that the run() function requires a list object that contains each element of the command and it’s arguments.
+
+
+2. Make sure to PIPE stdout
+3. Store the ‘CompleatedProcess’ return value in a variable named ‘myProc’
+
+
+Part 2:
+
+
+Extract the data from your ‘myProc’ variable and format it into something we can use 
+
+
+1. Use decode() to extract the string data out of ‘stdout’ in your ‘myProc’ variable. 
+   * Save this into a variable named ‘myProcString’
+
+
+2. Use split(‘\n’) to create a list from your decoded data
+   * Save this into a variable named ‘myProcList’
+
+
+________________
+Part 3:
+
+
+Now that you have a list of of processes do the following
+
+
+1. Use a simple for loop to print out all of the process name one line at a time (Note: This should look a lot like just running the command in Bash)
+2. Count the number of processes in the list using the ‘len()’ function.
+   * The first element in the list will be the field header which is not a process. Use slicing to skip this first element before using the ‘len()’ function.
+   * Print the count (len) to the screen.
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title and include any comments about things you want specific feedback on or questions you may have about the assignment.
+
+
+  
+
+
+
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.

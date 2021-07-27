@@ -1,0 +1,93 @@
+﻿Midterm Activity 2:
+A Python In Jurassic Park
+
+
+Introduction
+For this script, you are going to emulate elements of scenes in the movie Jurassic Park (1993). 
+
+
+Concepts used in this script include:
+* Using a variable as a counter                                                [ Discussion 3 ]
+* Using a variable to govern flow control                                [ Discussion 3 ]
+* Accepting input from a user                                                [ Discussion 3 ]
+* Printing a single literal string a specific number of times                [ Discussion 4 ]
+* Printing a formatted string that includes the value of a variable        [ Discussion 4 ]
+* Using if-else statements inside of a while loop                        [ Discussion 7 ]
+* Using if-else statements inside of an else statement                        [ Discussion 7 ]
+* Creating key:value pairs in a dictionary                                [ Discussion 8 ]
+* Using key:value pairs to make a comparison                                [ Discussion 8 ]
+* Printing key:value pairs from a dictionary                                [ Discussion 8 ]
+
+
+To Do
+The primary goal for this section of your script is to initialize a set of objects that will be used to evaluate user input and control the flow of your while and if statements. You will initialize two dictionaries and two variables.
+
+
+1. Create a script:
+   1. In your repo, create a new folder called midterm (if it doesn’t already exist)
+   2. In this folder, create a script called midterm-jpark.p.
+   3. Print out your first and last name to the screen in this format:
+      1. print(“Name:<your first name> <your last name>”)
+   4. Save it into your local git repository directory
+
+
+2. In your script, initialize a dictionary named password_database that contains the following key:value pairs:
+   1. Username:dnedry
+   2. Password:please
+
+
+3. Initialize a dictionary named command_database that contains the following key:value pairs:
+   1. reboot        : OK. I will reboot all park systems.
+   2. shutdown        : OK. I will shut down all park systems.
+   3. done                : I hate all this hacker stuff.
+
+
+4. Initialize two objects named white_rabbit_object and counter
+   1. white_rabbit_object = 0
+      1. Note: This is used to break out of the while loop
+   2. counter = 0
+      1. Note: This is used to count the number of failed authentication attempts
+Create a While Loop
+The primary goal of the while loop is to authenticate the user. You will use IF statements inside the while loop to make decisions about the authentication process. The while loop should use the counter object to determine how many authentication failures have occurred. When three authentication failures have occurred the script should print a unique message. The while loop should use the white_rabbit_object to identify a successful login.
+
+
+1. Start your while loop using a logical operator to evaluate the current values of white_rabbit_object and counter.
+   1. Is white_rabbit_object equal to 0
+   2. Is the value of counter less than 3
+
+
+2. Create two variables using input from the user
+   1. input_user = 
+   2. input_password =
+
+
+3. Use an IF statement to compare the user input against the values stored in the password_database dictionary
+   1. If both the username and password are correct
+      1. Set white_rabbit_object to 1
+      2. Print “Hi, Dennis. You’re still the best hacker in Jurassic Park.”
+      3. Ask the user to enter a command
+         1. As part of this statement, print the keys in command_database to show the three available commands
+      4. Evaluate the command provided by the user
+         1. If the command is reboot print the associated value from command_database
+         2. If the command is shutdown print the associated value from command_database
+         3. If the command is done print the associated value from command_database
+         4. For any other command, print “The Lysine Contingency has been put into effect.”
+   2. Otherwise, If either the username or password are incorrect
+      1. Increment counter by 1
+      2. If the counter is equal to 3 print “You didn’t say the magic word” 25 times. Note: Each printed string should be on a new line. 
+      3. Otherwise, print a formatted string that also shows the value of counter
+         1. “You didn’t say the magic word. {counter}”
+Submission
+Add, commit and push your changes to GitHub. Once all three midterm activities are complete, create an issue to signal you are ready for grading.
+Reference
+(1) Successful authentication and valid command execution
+  
+
+
+
+(2) Successful authentication and unknown command execution
+  
+
+
+
+(3) Authentication Failures

@@ -1,0 +1,41 @@
+﻿[Lab-Python] Interacting with a website
+________________
+
+
+
+
+To Do:
+This week we will be using different modules to interact with a web page.
+
+
+1. Copy a webpage:
+   1. Create a folder for the week we are in.  For example, if this is week 7 of your class schedule, create a folder called week7 (without spaces).
+   2. In your weekly folder, create a script called copy-web.py
+   3. In your script, get the page from https://notpurple.com and copy it to a file called my_web_file.html
+   4. Verify your script worked by opening the file in a browser (firefox my_web_file.html)
+2. Get a list of links from the page https://notpurple.com
+   1. In your weekly folder create a script called inspect-web.py
+   2. Follow along with the parsing_html reading to learn how to inspect a webpage using the Beautiful Soup module
+   3. In your script print out the title of the page and each of the links on that page.  Note that links have a tag of ‘a’.
+   4. If you get a warning message about using the default ‘lxml’ parser, you can specify which parser Beautiful Soup should use.  Example: soup = BeautifulSoup(html_text, 'html.parser').  Html.parser is the built-in Python HTML parser, but you can also specify ‘lxml’.
+Reference:
+* Great “requests” library samples:
+   * http://zetcode.com/python/requests/
+* Beautiful Soup Documentation
+
+
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title and include any comments about things you want specific feedback on or questions you may have about the assignment.
+
+
+  
+
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.

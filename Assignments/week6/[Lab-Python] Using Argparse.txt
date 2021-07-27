@@ -1,0 +1,39 @@
+﻿[Lab-Python] Using Argparse
+________________
+
+
+Get Started:
+1. Create a folder for the week we are in.  For example, if this is week 6 of your class schedule, create a folder called week6 (without spaces).
+2. Navigate to the weekly folder.
+3. Using nano (or another editor of your choice), create a script called arguments.py.  Make sure to set the permissions to allow python to execute.
+To Do:
+
+
+Step 1: Using the argparse module, setup arguments so that you would get the following help text:
+
+
+  
+
+
+
+Step 2: In your script, print the value of your integer, string, float and list arguments.  Hint, there is an example provided at the end of this topic slides.
+
+
+
+
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title and include any comments about things you want specific feedback on or questions you may have about the assignment.
+
+
+  
+
+3. Optional: Include any comments about things you want specific feedback on or questions you may have about the assignment.
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.
