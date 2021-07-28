@@ -1,0 +1,124 @@
+﻿[Lab-Python] String Formatting
+________________
+
+
+
+
+Your goal is to create an output that looks exactly like each of the Questions. You will use the three variables defined at the start of the lab. Anywhere in the question where the words “Red”, “Green”, “Blue”, or “Timmy” show up in the output you must use the variables. 
+
+
+The answer will be the code that you use to solve the problem. 
+
+
+Rules:
+1. You cannot reassign the variables!!!! They have to be exactly the way they are defined in the”Your variables” section.
+
+
+2. You must print out the string EXACTLY as it is in the question (double check your work for upper/lowercase, spaces, punctuation, etc…
+
+
+3. Solve each problem using 1 line. 
+
+
+4. You can use “String Slicing”. 
+
+
+5. When using the formatting specifiers, use the full form of the format specifier for all of the fields even if you don’t need them to accomplish the output. This is just so you think about all of the fields and how they work. 
+
+
+Get Started:
+1. Create a folder for the week we are in.  For example, if this is week 2 of your class schedule, create a folder called week2 (without spaces).
+2. Navigate to the weekly folder.
+3. Using the editor of your choice, create a script called strings.py.  Make sure to set the permissions and use python3.
+Your variables:
+Add these variables to your script:
+
+
+* varRed = “Red”
+* varGreen = “Green”
+* varBlue = “Blue”
+* varName = “Timmy”
+* varLoot = 10.4516295
+Example Question and answer:
+
+
+1. Question: ‘Your Green Output’
+        Answer:   “Your {varGreen:<0s} Output”
+
+
+To Do:
+Create a line of python code that will output the exact output in the Question section.  You do not need to have the quotes (‘’), but you do need to match the characters inside the quotes exactly. Use the format technique used in the discussion.
+
+
+1. Question: 'Hello Timmy'
+Answer: 
+
+
+2. Question: 'Red-Green-Blue'
+Answer:
+
+
+3. Question: 'Is this green or blue?'
+Answer:
+
+
+4. Question: 'My name is TIMMY'
+Answer:
+
+
+5. Question: '[++Red++]'
+Answer:
+
+
+6. Question: '[green==]'
+Answer:
+
+
+7. Question: '[*****blue]'
+Answer:
+
+
+8. Question: 'BlueBlueBlueBlueBlueBlueBlueBlueBlueBlue'
+Answer:
+
+
+9. Question: '10.4516295'
+Answer:
+
+
+10. Question: '10.5'
+Answer:
+
+
+11. Question: 'I have $10.45'
+
+
+12. Question: '[$$$Red$$$$] [$$Green$$$] [$$$Blue$$$]'
+Answer:
+
+
+13. Question: '[   deR    ] [  Green   ] [   eulB   ]'
+Answer:
+
+
+14. Question:  'First Color:[Red] Second Color:[Green] Third Color:[Blue]'
+Answer:
+
+
+
+
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title and include any comments about things you want specific feedback on or questions you may have about the assignment.
+
+
+  
+
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.

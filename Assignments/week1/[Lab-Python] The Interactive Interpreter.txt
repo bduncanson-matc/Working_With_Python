@@ -1,0 +1,166 @@
+﻿[Lab] The Interactive Interpreter
+________________
+
+
+
+
+Summary:
+In this lab you will launch an interactive Python3 shell and run the following commands. 
+For all of these questions just read the result of the command.
+Note: The point here is NOT for you to understand all of the data types that the type() command returns, it is to simply read the results of the command and answer the question.  
+
+
+
+
+Summary:
+Starting an Interactive python session:
+Getting Help:
+type() function:
+dir() function
+help() function:
+
+
+	Starting an Interactive python session:
+  
+
+	________________
+Getting Help:
+type() function:
+        The type() function will tell you the type of object that you are dealing with. 
+Using the Interactive Run the type() function on the following pieces of data and enter the result.
+
+
+* type(“hello”)
+________________________
+
+
+* type(1)
+________________________
+
+
+* type(1.1)
+________________________
+
+
+* type([1])
+________________________
+
+
+* type({1})
+________________________
+
+
+* type(“True”)
+________________________
+
+
+* type(b”True”)
+________________________
+
+
+* type(True)
+________________________
+
+
+* type([])
+________________________
+
+
+* type(())
+________________________
+
+
+* type({})
+________________________
+
+
+
+
+dir() function
+
+
+The dir() function returns all of the possible functions that the object you are working with can do. Run the dir() function on the following pieces of data and enter one function name that you see listed. 
+Note: Ignore the functions that have underscores on each side (Ex:”__test__”, we will discuss what those are later.
+
+
+
+
+* dir(“hello”)
+________________________
+
+
+* dir(1)
+________________________
+
+
+* dir(1.1)
+________________________
+
+
+* dir([1])
+________________________
+
+
+* dir({1})
+________________________
+
+
+* dir(“True”)
+________________________
+
+
+* dir(b”True”)
+________________________
+
+
+* dir(True)
+________________________
+
+
+* dir(“False”)
+________________________
+
+
+________________
+
+
+help() function:
+        Run the type command on the following pieces of data and enter the result.
+To Exit the help screen:
+When you run help on an object or module you will be put into an interactive help screen. To get out of it type in the letter ‘q’ at the prompt.
+        
+        
+* help(“math”)
+   * is “math” a module or an object?
+____________________________________
+   * What does this do?
+____________________________________
+
+
+* help(“random”)
+   * is “random” a module or an object?
+____________________________________
+   * What does this do?
+____________________________________
+
+
+* help(“str”)
+   * Which module is the “str” in?
+___________________________________
+   * What does this do?
+___________________________________
+
+
+* help(“int”)
+   * Which module is the “int” in?
+__________________________________
+   * What does this do?
+__________________________________ 
+
+
+
+
+Submission:
+
+
+Save this document as Python-InterpreterAssignment.docx and upload to the ‘Week 1 Lab - The Interactive Interpreter’ assignment which can be found in the ‘Assignments’ link in Blackboard.

@@ -1,0 +1,40 @@
+﻿[Lab-Python] JSON (ipinfo.io)
+________________
+
+
+To Do:
+This week we will be using the json module to translate JSON into a Python dictionary.  We will use the web API ipinfo.io which is a straight forward interface for retrieving information about an IP Address such as location and organization.
+
+
+1. Create a folder for the week we are in.  For example, if this is week 7 of your class schedule, create a folder called week7 (without spaces).
+2. In this weekly folder, create a script called json.py.
+3. Ensure your script can take in an argument with a flag of ‘-ip’ so that your user can pass in an IP Address. Hint: Look back at the ArgParse discussion for details on how to do this.
+4. Import the web and json modules and make a request to the ipinfo.io API.  An example URL is http://ipinfo.io/172.217.8.206/json.  You will need to use the -ip argument to build this URL.
+5. Using the json module, load the json from the web response into a Python dictionary called myDict.
+6. Using a for loop, step through each item in the dictionary response and print both the key name and value.
+
+
+The output should look something like this (depending on the ip address):
+
+
+  
+
+
+
+
+
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title and include any comments about things you want specific feedback on or questions you may have about the assignment.
+
+
+  
+
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.

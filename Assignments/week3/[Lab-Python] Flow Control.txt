@@ -1,0 +1,106 @@
+﻿[Lab-Python] Flow Control
+________________
+  Get Started:
+1. Create a folder for the week we are in.  For example, if this is week 3 of your class schedule, create a folder called week3 (without spaces).
+2. Navigate to the weekly folder.
+3. Using nano (or another editor of your choice), create a script called flowcontrol.py.  Make sure to set the permissions to allow python to execute.
+________________
+To Do:
+Copy the sample code into your new script. Modify the game with your own theme (as the current one is a little off). Add an additional door to the selection (so your game should have 3 doors total). In this script you will ask the user questions and make decisions based on their answers. Write this script, and then play with it to figure how decision logic works.
+
+
+Sample script:
+#!/usr/bin/env python3 
+
+
+print("""You enter a dark room with two doors. 
+Do you go through door #1 or door #2?""")
+
+
+
+
+door = input("-> ")
+
+
+# == Door Number 1 logic =======================
+if door == "1":
+
+
+    print("There's a giant bear here eating a cheese cake.")
+    print("What do you do?\n")
+
+
+    print("1. Take the cake.")
+    print("2. Scream at the bear.")
+
+
+    # == Bear logic ============================
+    bear = input("-> ")
+
+
+    if bear == "1":
+        print("1) The bear eats your face off. Good job!")
+    elif bear == "2":
+        print("2) The bear eats your legs off. Good job!")
+    else:
+        print(f"N)Well, doing {bear} is probably better.")
+        print("Bear runs away.")
+
+
+# == Door Number 2 Logic =====================
+elif door == "2":
+    print("You stare into the endless abyss at Cthulhu's retina.\n")
+    
+    print("1. Blueberries.")
+    print("2. Yellow jacket clothespins.")
+    print("3. Understanding revolvers yelling melodies.")
+    
+    # == Insanity Logic ======================
+    insanity = input("-> ")
+
+
+    if insanity == "1" or insanity == "2":
+        print("1) Your body survives powered by a mind of jello.")
+        print("1) Good job!")
+    else:
+        print("N) The insanity rots your eyes into a pool of muck.")
+        print("N) Good job!")
+else:
+    print("You did not select a door??? Good Call :)")
+	
+
+What You Should See when you run this script:
+$./ex31.py
+You enter a dark room with two doors.
+Do you go through door #1 or door #2?
+-> 1
+There's a giant bear here eating a cheese cake.
+What do you do?
+1. Take the cake.
+2. Scream at the bear.
+-> 2
+2) The bear eats your legs off. Good job!
+	
+
+
+
+  
+________________
+
+
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title and include any comments about things you want specific feedback on or questions you may have about the assignment.
+
+
+  
+
+3. Optional: Include any comments about things you want specific feedback on or questions you may have about the assignment.
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.

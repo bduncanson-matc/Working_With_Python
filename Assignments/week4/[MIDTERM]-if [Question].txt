@@ -1,0 +1,64 @@
+﻿Midterm Activity 1: 
+Flow Control
+________________
+
+
+Introduction
+For this script you will be reading in a file and finding words on each line.
+
+
+Concepts used in this script include:
+* Counting the lines using Integers                                                [ Week 4 ]
+* Reading from a file                                                                [ Week 5 ]
+* Iterating through lines of a file                                                [ Week 5 ]
+* Making Decisions based on Conditions                                        [ Week 6 ]
+To Do
+
+
+Step 1) Download the file you will read (Do not change the name):
+* In your repo, create a new folder called midterm (if it doesn’t already exist)
+* Download Midterm-if.txt
+* Save it into your midterm directory
+
+
+Step 2) Create a script in your midterm directory:
+* Name: midterm-if.py
+* Print out your first and last name to the screen in this format:
+   * print(“Name:<your first name> <your last name>”)
+* Save it into your local git repository directory
+
+
+Step 3) In your script, create a variable named “Total”. In your loop you will increment this variable on each matched line by line number. 
+* Note 1: You will need to extract the the line number out of the string
+* Note 2: You will need to convert the line number to an integer to add it
+* Ex: 
+   * Total += <line number>
+
+
+Step 4) Create a series of if/elif statements to check if each line in the file matches any of the keywords. If the line matches any of the keywords, extract that line number and add it to the “Total” variable.   
+
+
+________________
+
+
+List of keywords to find:.
+* "gmeach18@ed.gov"
+* "248.253.63.149"
+* "Whiteland"
+* "80.222.19.190"
+* "Kayley"
+* "dcassyqw@microsoft.com"
+
+
+Step 5) Print out the “Total” variable in the last line of your script using this format. 
+* print(f"The total is: {Total}")
+
+
+
+
+Step 6) If correct, your script should identify 6 lines out of the file and the total of the added up line numbers should be 2425. Test your script, to ensure your output looks like this
+The total is: 2425
+	
+
+Submission
+Add, commit and push your changes to GitHub. Once all three midterm activities are complete, create an issue to signal you are ready for grading.

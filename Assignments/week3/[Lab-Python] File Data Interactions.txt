@@ -1,0 +1,57 @@
+﻿[Lab-Python] File Data Interactions
+________________
+
+
+Get Started:
+1. Create a folder for the week we are in.  For example, if this is week 3 of your class schedule, create a folder called week3 (without spaces).
+2. Navigate to the weekly folder.  
+3. Using nano (or another editor of your choice), create a script called files.py.  Make sure to set the permissions to allow python to execute.
+To Do:
+Add a line or lines of python code to your script that will accomplish the following:
+
+
+
+
+1. Open the “/etc/passwd” file using read only access and save the full file contents to a str data type (Note: you will need to select the correct read function to return a string). 
+
+
+1. Use the len() function to get the size and print it out to the screen.
+2. Add a print statement t to your script to indicate what the len() function counts
+3. Add a print statement to your script to describe when would you use this read function over other read functions.
+
+
+2. Open the “/etc/passwd” file using read only access and save the full file contents to a list data type (Note: you will need to select the correct read function to return a list). 
+
+
+1. Use the len() function to get the size and print it out to the screen
+2. Add a print statement to your script to indicate what the len() function counts
+3. Add a print statement to your script to describe when would you use this read function over when you’d use other read functions.
+________________
+
+
+
+
+3. Open the “/etc/passwd” file using read only access and save the full file contents one line at a time to a variable. (Note: you will need to select the correct read function to return one line at a time and store it during each iteration of the loop).
+
+
+1. Add code that will calculate the total length of the file (number of characters) and print it out to the screen. Note: To test if your number is correct, run “wc -c /etc/passwd”
+
+
+2. Add a print statement to your script to describe when would you use this technique (loop and read function) over another read function.
+
+
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title and include any comments about things you want specific feedback on or questions you may have about the assignment.
+
+
+  
+
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.

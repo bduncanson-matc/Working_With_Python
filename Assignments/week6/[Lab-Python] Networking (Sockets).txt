@@ -1,0 +1,59 @@
+﻿[Lab-Python] Networking (Sockets)
+________________
+
+
+
+
+Get Started:
+1. Create a folder for the week we are in.  For example, if this is week 6 of your class schedule, create a folder called week6 (without spaces).
+2. Navigate to the weekly folder.
+To Do:
+In this lab we are using the loopback address (127.0.0.1) to simulate a client/server environment. 
+
+
+
+
+
+
+  
+
+
+
+
+
+1.  Create a simple chat application between the client and server scripts. To achieve this you will need to build both the client and the server python scripts on your machine. 
+   1. Create two scripts called client.py and server.py.
+   2. In the client script, use a simple loop to send multiple messages during a single run of the client. 
+   3. In the server script, respond to any chat messages by echoing the message back to the client.
+
+
+2.  Build a simple file transfer application. Remember, a file is nothing more than a set of alphabetic characters. This is not much different than sending a single line of text.
+   1. Create a script called filetransfer-client.py.
+   2. In your client:
+      1. Open a file 
+      2. Read it into a variable
+      3. Send it
+   3. Create a script called filetransfer-server.py.
+      1. Receive the connection/stream
+      2. Write the output to a file (use a different file name than the original file).
+
+
+
+
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title and include any comments about things you want specific feedback on or questions you may have about the assignment.
+
+
+  
+
+
+
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.

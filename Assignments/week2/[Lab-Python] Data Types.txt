@@ -1,0 +1,55 @@
+﻿[Lab-Python] Data Types
+________________
+
+
+Get Started:
+1. Create a folder for the week we are in.  For example, if this is week 2 of your class schedule, create a folder called week2 (without spaces).
+2. Navigate to the weekly folder.
+3. Using nano (or another editor of your choice), create a script called sequences.py  Make sure to set the permissions to allow python to execute.
+To Do:
+Create a line or lines of python code that will output the format shown:
+
+
+Example: 
+1. Output: ‘Hello Timmy’
+2. Line of code in python script: print(“Hello Timmy”)
+
+
+Steps:
+1. Create the following variables in your script:
+   1. varString = "Here is a nice string to slice"
+   2. varList = [ "Here", "is", "a", "nice", "list", "to", "slice" ]  
+2. Using slicing on varString create the following output using one line of code:
+   1. 'e is a nice string to slice'
+   2. 'Her'
+   3. 'e is a ni'
+   4. 'Hr sanc tigt lc'        
+   5. 'ecils ot gnirts ecin a si ereH'
+3. Using slicing on varList create the following output using one line of code:
+   1. ['slice', 'to', 'list', 'nice', 'a', 'is', 'Here'] 
+   2. ['a', 'is', 'Here']
+   3. ['a', 'nice']
+   4. ['Here', 'nice', 'slice']
+   5. ['is', 'a', 'nice', 'list', 'to', 'slice']
+4. Using a for loop, print out each element of varString one line at a time.
+5. Using a for loop, print out each element of varList one line at a time.
+
+
+________________
+
+
+Submission:
+When you have completed your script and tested that the output matches the directions above, add, commit and push your changes to GitHub.  It’s always a good idea to check that your files/changes uploaded to GitHub correctly, by looking at them in GitHub with your browser.
+
+
+1. Create an Issue in GitHub to signal you are ready for grading:
+  
+
+
+
+2. Give your issue a meaningful title and include any comments about things you want specific feedback on or questions you may have about the assignment.
+
+
+  
+
+Your instructor will provide feedback in the GitHub issue and post your grade in Blackboard.

@@ -1,0 +1,47 @@
+﻿Midterm Activity 3: 
+Slicing
+________________
+
+
+Introduction
+For this step, you will read a file into a list and use slicing to get to the famous quote.
+
+
+Concepts used in this script include:
+* Reading a file into a list                                                [ Discussion 6 ]
+* Iterating through lines of a file                                        [ Discussion 6 ]
+* Breaking a string into individual words using split()                        [ Discussion 4 ]
+* Joining words into a string using join()                                [ Discussion 4  ]
+* Slicing a string                                                                [ Discussion 4  ]
+To Do
+
+
+1. In your repository create a folder called midterm (if it doesn’t already exist)
+2. Click here to download the file to slice. Save it to your midterm directory. 
+
+
+3. Create a script:
+   1. Name: midterm-slicing.py
+   2. Print out your first and last name to the screen in this format:
+      1. print(“Name:<your first name> <your last name>”)
+   3. Save it into your local git repository directory
+
+
+4. In your script, create a variable for each item below and use a single slice to get the correct words from the file:
+   1. The third word from the end of the list
+   2. The third through fifth word of the list
+   3. The 10th word from the end of the file and every other word for a total of 3 words.
+   4. The 11th through 13th word 
+   5. The 19th - 21st words from the end of the file 
+
+
+5. Add each word to a new string called “quote”.  Hint, some of your slices will return a list of strings instead of a single string. You can use the join() function to join the list of words into a single list.
+
+
+6. Print the final quote out to the screen.  Note, if you want to remove end of line characters, you can use the replace() function in Python.
+
+
+7. Test your script, to ensure you see the following output:
+   1. "Whether you think you can or you think you can't, you are right."
+Submission
+Add, commit and push your changes to GitHub. Once all three midterm activities are complete, create an issue to signal you are ready for grading.
