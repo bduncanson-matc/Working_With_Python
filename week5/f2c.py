@@ -12,4 +12,5 @@ def main():
     outputC = f_to_c(f)
     print(f"{f} Fahrenheit degrees is equal to {outputC} degrees in Celcius.")
 
-main()
+if __name__ == "__main__":
+    main()
