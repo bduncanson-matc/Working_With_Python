@@ -1,18 +1,33 @@
 #! /usr/bin/env python3
-#from c2f.py import C_to_f
-#from f2c.py import f_to_c
 
-temp = input("Enter the temperature: ")
-scale = input("Enter the measurement scale of (F or C): ")
+import f2c
+import c2f
 
-#make sure a valid input is entered
-if scale == "F":
-    f = temp
-    tempC = f_to_c(f)
-    print(f"{temp} in F is equal to {tempC} in C")
+# Validation loop breaks could make break after so many tries
+loop = 0
+temp = float(input("Enter a temperature: "))# should add digits but need to finish atm life is hard.
+while loop == 0:
+    scale = input("Enter the measurement scale of (F or C): ")# could add more strings that signify the degree
+    counter = 1
+    break
 
-elif scale == "C":
-    tempF = c_to_f(temp)
-    print(f"{temp} in F is equal to {tempF} in F")
-else:
-    scale = input("invalid input try again (F or C)")
+#after a degree is chosen
+while loop == 1:
+    if scale.lower() == "f":
+        tempC = f2c.f_to_c(temp)
+        print(f"{temp} in Fahrenheit is equal to {tempC} in Celsius")
+        reset = input("Would you like to convert another temperature?(Y/N): ")
+        if reset.lower() == "y":
+            counter = 0
+        else:
+            break
+    else:
+        tempF = c2f.c_to_f(temp)
+        print(f"{temp} in Celsius is equal to {tempF} in Fahrenheit")
+        reset = input("Would you like to convert another temperature?(Y/N): ")
+        if reset.lower() == "y":
+            counter = 0
+        else:
+            break  # need to fix the loop logic above but dont have the time :(
+
+
