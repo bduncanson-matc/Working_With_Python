@@ -3,8 +3,7 @@
 import socket
 
 
-LHOST = ''
-# Arbitrary non-privileged port to listen on
+LHOST = '127.0.0.1' #
 LPORT = 5000
 RCV_DATA = ""
 
@@ -17,7 +16,8 @@ while(1):
     print('Connected by', addr)
     while 1:
         RCV_DATA = L_CONN.recv(1024)
-        if not RCV_DATA: break
+        if not RCV_DATA:
+            break
         print(f"The server received this data:{RCV_DATA}")
         L_CONN.sendall(RCV_DATA)
 
