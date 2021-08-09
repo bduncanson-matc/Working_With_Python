@@ -10,7 +10,7 @@ firstName = "Bryan"
 lastName = "Duncanson"
 # adding arguments using the argparse module
 parser = argparse.ArgumentParser(description='final exam arg parse')
-parser.add_argument('-ip', required= True, type=str, dest='ipVar', help="Enter a ip address")
+parser.add_argument('-ip', required= True, type=str, dest='ipVar', default='172.23.23.252', help="Enter a ip address")
 parser.add_argument('-f', required= True, choices=[1,2,3,4,5], type=int, dest='funcVar', help="Enter a function number")
 # creating a variable to access arguments
 args = parser.parse_args()
@@ -31,7 +31,11 @@ if args.funcVar == 1:
 def parse_string():
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
-    print(soup)
 
-parse_string()
+    for msg in soup.find('h3'):
+        hStr = msg.string
 
+    return hStr[2::3]
+
+if args.funcVar == 2:
+    print(parse_string())
