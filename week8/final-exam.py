@@ -50,12 +50,16 @@ def parse_header(arg=url):
     return headerDict['MATC-HEADER']
 
 def parse_json(arg=url):
+    yes = 'yes'
     response = requests.get(arg)
     jsonDict = json.loads(response.text)
-    decodedDict = complex(jsonDict)
-    return response
+    for dict in jsonDict['Music And Books']:
+        if dict['title'] == '1984':
+            return dict['author']
+
+def socket_client(ipadress='172.23.23.253')
 
 funcKey = args.funcVar - 1
-funcList = [get_response, parse_string, parse_header]
+funcList = [get_response, parse_string, parse_header, parse_json]
 print(funcList[funcKey]())
-print(parse_json())
+
