@@ -2,9 +2,11 @@
 
 # imported modules
 import argparse
+import sys
 import requests
 from bs4 import BeautifulSoup
 import json
+import socket
 
 # basic variables
 firstName = "Bryan"
@@ -44,22 +46,43 @@ def parse_string():
 
 
 
-def parse_header(arg=url):
-    response = requests.get(arg)
+def parse_header(url_arg=url):
+    response = requests.get(url_arg)
     headerDict = response.headers
     return headerDict['MATC-HEADER']
 
-def parse_json(arg=url):
-    yes = 'yes'
-    response = requests.get(arg)
+def parse_json(url_arg=url):
+    response = requests.get(url_arg)
     jsonDict = json.loads(response.text)
     for dict in jsonDict['Music And Books']:
         if dict['title'] == '1984':
             return dict['author']
 
-def socket_client(ipadress='172.23.23.253')
+def socket_client(ip=args.ipVar):
+    if ip == '172.23.23.252':
+        changeUrl = input(f"your url is set argument is set to 172.23.23.252. Would you like to change it 172.23.23.253 (Y/N)\n")
+        if changeUrl.lower() == 'y':
+            ip = '172.23.23.253'
+    RHOST = ip
+    RPORT = range(5000,6001)
+    SND_DATA = "secret"
+
+    try:
+        for port in RPORT:
+            C_SOCK = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+            result = C_SOCK.connect_ex((RHOST, port))
+            if result == 0:
+                C_SOCK.send(bytearray(SND_DATA, 'utf8'))
+                RCV_DATA = C_SOCK.recv(1024)
+                C_SOCK.close()
+                return RCV_DATA.decode()
+    except KeyboardInterrupt:
+        sys.exit()
+    except socket.error:
+        sys.exit
+
 
 funcKey = args.funcVar - 1
-funcList = [get_response, parse_string, parse_header, parse_json]
+funcList = [get_response, parse_string, parse_header, parse_json, socket_client]
 print(funcList[funcKey]())
 
