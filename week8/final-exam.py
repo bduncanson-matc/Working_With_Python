@@ -16,7 +16,7 @@ fullName = f"{firstName} {lastName}"
 parser = argparse.ArgumentParser(description="Final Exam script arguments")
 parser.add_argument('-ip', required=True, type=str, dest='ipVar', default='172.23.23.252', help="Enter a ip address")
 parser.add_argument('-f', required=True, choices=[1, 2, 3, 4, 5], type=int, dest='funcVar',
-                    help= "Enter the function number")
+                    help="Enter the function number")
 # creating a variable to access arguments
 args = parser.parse_args()
 # url string variable using arguments from the terminal
@@ -32,7 +32,7 @@ def get_response():
     return response.text
 
 
-# call if the argugment -f == 1
+# call if the argument -f == 1
 # if args.funcVar == 1:
 #   print(get_response())
 # changed this to a list for calling
@@ -63,10 +63,12 @@ def parse_json(url_arg=url):
         if dict['title'] == '1984':
             return dict['author']
 
+
 def socket_client(ip_arg=args.ipVar):
+    # allows change of ip arg for the final exam if you forgot to change it from the terminal
     if ip_arg == '172.23.23.252':
-        change_url = input("Your url is set argument is set to 172.23.23.252. Would you like to change it "172.23.23
-        .253 (Y/N): ")
+        change_url = input("Your url is set argument is set to 172.23.23.252. Would you like to change it 172.23.23"
+                           ".253 (Y/N): ")
         if change_url.lower() == 'y':
             ip_arg = '172.23.23.253'
 
@@ -88,7 +90,7 @@ def socket_client(ip_arg=args.ipVar):
     except socket.error:
         sys.exit()
 
-
+# way to call functions using arguments from the terminal
 funcKey = args.funcVar - 1
 funcList = [get_response, parse_string, parse_header, parse_json, socket_client]
 print(funcList[funcKey]())
